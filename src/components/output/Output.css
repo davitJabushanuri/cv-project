@@ -1,0 +1,70 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.output {
+	height: 100vh;
+	padding: 1rem;
+	background-color: aqua;
+	display: flex;
+	justify-content: center;
+}
+
+.resume {
+	width: 800px;
+	background-color: #fff;
+	padding: 4rem;
+}
+
+.personal-information {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid gray;
+}
+
+.left {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.left > h1 {
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: rgb(51, 117, 117);
+}
+
+.left > p {
+	font-weight: 100;
+	font-size: 1.2rem;
+}
+
+.right {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 12px;
+}
+
+.contact-info {
+	display: flex;
+	gap: 1rem;
+	justify-content: right;
+}
+
+.icon-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-icon {
+	height: 12px;
+	width: 12px;
+	color: gray;
+}
