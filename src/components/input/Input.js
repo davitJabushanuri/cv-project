@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Input = ({ info, setInfo }) => {
-	console.log(info)
 	const saveInput = e => {
 		setInfo({
 			...info,

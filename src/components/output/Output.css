@@ -5,9 +5,8 @@
 }
 
 .output {
-	height: 100vh;
+	min-height: 100vh;
 	padding: 1rem;
-	background-color: aqua;
 	display: flex;
 	justify-content: center;
 }
@@ -15,10 +14,13 @@
 .resume {
 	width: 800px;
 	background-color: #fff;
-	padding: 4rem;
+
+	border: 1px solid black;
 }
 
 .personal-information {
+	background-color: #303846;
+	padding: 2rem;
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 2rem;
@@ -29,31 +31,32 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	gap: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 .left > h1 {
-	font-weight: 700;
+	color: #fff;
+	font-weight: 600;
 	font-size: 2rem;
-	text-transform: uppercase;
-	color: rgb(51, 117, 117);
 }
 
 .left > p {
-	font-weight: 100;
+	color: rgb(190, 190, 190);
+	font-weight: 200;
 	font-size: 1.2rem;
 }
 
 .right {
+	color: rgb(173, 166, 166);
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 0.8rem;
 	font-size: 12px;
 }
 
 .contact-info {
 	display: flex;
-	gap: 1rem;
+	gap: 0.4rem;
 	justify-content: right;
 }
 
@@ -66,5 +69,47 @@
 .contact-icon {
 	height: 12px;
 	width: 12px;
-	color: gray;
+	color: rgb(143, 140, 140);
+}
+
+.education {
+	padding: 2rem;
+}
+
+.university {
+	margin-bottom: 1rem;
+}
+
+.heading {
+	font-weight: 500;
+	font-size: 1.6rem;
+	color: #303846;
+	margin-bottom: 1rem;
+}
+
+.university-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.4rem;
+}
+
+.specialty {
+	font-size: 1.2rem;
+}
+
+.name {
+	font-weight: 300;
+	color: #303846;
+}
+
+.years {
+	display: flex;
+	gap: 0.6rem;
+	justify-content: center;
+	align-items: center;
+}
+
+p {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
