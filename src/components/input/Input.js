@@ -7,7 +7,7 @@ import SkillsInput from './SkillsInput'
 
 const Input = ({ info, setInfo }) => {
 	return (
-		<div className='Input'>
+		<div className='input'>
 			<form className='form' action=''>
 				<PersonalDetailsInput info={info} setInfo={setInfo} />
 				<EducationInfo info={info} setInfo={setInfo} />

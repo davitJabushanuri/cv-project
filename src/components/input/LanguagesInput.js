@@ -16,9 +16,8 @@ const LanguagesInput = ({ info, setInfo }) => {
 	}
 
 	return (
-		<fieldset id='skills-fieldset'>
-			<legend>Languages</legend>
-
+		<div className='languages'>
+			<h2>Languages</h2>
 			<input
 				type='text'
 				name='language'
@@ -27,7 +26,7 @@ const LanguagesInput = ({ info, setInfo }) => {
 			/>
 
 			<button onClick={pushLanguageToInfo}>Add</button>
-		</fieldset>
+		</div>
 	)
 }
 

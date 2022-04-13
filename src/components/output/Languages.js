@@ -3,7 +3,7 @@ import React from 'react'
 const Languages = ({ languages }) => {
 	return (
 		<div className='languages'>
-			<h1>{languages.length > 0 ? `Languages` : ''}</h1>
+			<h1 className='heading'>{languages.length > 0 ? `Languages` : ''}</h1>
 			{languages.map(x => {
 				return <li>{x}</li>
 			})}

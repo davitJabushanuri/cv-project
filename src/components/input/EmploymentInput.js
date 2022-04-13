@@ -20,46 +20,42 @@ const EmploymentInput = ({ info, setInfo }) => {
 
 	return (
 		<div className='employment'>
-			<fieldset id='work-fieldset'>
-				<legend>Work Experience</legend>
+			<h2>Employment</h2>
+			<input
+				type='text'
+				name='position'
+				placeholder='Position'
+				onChange={saveJob}
+			/>
 
-				<input
-					type='text'
-					name='position'
-					placeholder='Position'
-					onChange={saveJob}
-				/>
+			<input
+				type='text'
+				name='employer'
+				placeholder='Employer'
+				onChange={saveJob}
+			/>
 
-				<input
-					type='text'
-					name='employer'
-					placeholder='Employer'
-					onChange={saveJob}
-				/>
+			<input
+				type='number'
+				name='startDate'
+				placeholder='Start date'
+				onChange={saveJob}
+			/>
 
-				<input
-					type='number'
-					name='startDate'
-					placeholder='Start date'
-					onChange={saveJob}
-				/>
+			<input
+				type='number'
+				name='endDate'
+				placeholder='End date'
+				onChange={saveJob}
+			/>
 
-				<input
-					type='number'
-					name='endDate'
-					placeholder='End date'
-					onChange={saveJob}
-				/>
+			<textarea
+				name='description'
+				placeholder='Description'
+				onChange={saveJob}
+			/>
 
-				<input
-					type='textarea'
-					name='description'
-					placeholder='Description'
-					onChange={saveJob}
-				/>
-
-				<button onClick={pushJobToInfo}>Add</button>
-			</fieldset>
+			<button onClick={pushJobToInfo}>Add</button>
 		</div>
 	)
 }

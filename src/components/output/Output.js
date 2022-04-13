@@ -11,10 +11,12 @@ const Output = ({ info }) => {
 		<div className='output'>
 			<div className='resume'>
 				<PersonalDetails personalDetails={info} />
-				<Education education={info.education} />
-				<Employment employment={info.employment} />
-				<Skills skills={info.skills} />
-				<Languages languages={info.languages} />
+				<main>
+					<Education education={info.education} />
+					<Employment employment={info.employment} />
+					<Skills skills={info.skills} />
+					<Languages languages={info.languages} />
+				</main>
 			</div>
 		</div>
 	)

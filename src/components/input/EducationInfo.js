@@ -2,7 +2,7 @@ import React from 'react'
 
 const EducationInfo = ({ info, setInfo }) => {
 	const [school, setSchool] = React.useState({})
-
+	console.log(info)
 	const saveSchool = e => {
 		setSchool({
 			...school,
@@ -20,46 +20,42 @@ const EducationInfo = ({ info, setInfo }) => {
 
 	return (
 		<div className='education'>
-			<fieldset id='education-fieldset'>
-				<legend>Education</legend>
+			<h2>Education</h2>
+			<input
+				type='text'
+				name='specialty'
+				placeholder='Specialty'
+				onChange={saveSchool}
+			/>
 
-				<input
-					type='text'
-					name='specialty'
-					placeholder='Specialty'
-					onChange={saveSchool}
-				/>
+			<input
+				type='text'
+				name='university'
+				placeholder='University'
+				onChange={saveSchool}
+			/>
 
-				<input
-					type='text'
-					name='university'
-					placeholder='University'
-					onChange={saveSchool}
-				/>
+			<input
+				type='number'
+				name='startDate'
+				placeholder='Start date'
+				onChange={saveSchool}
+			/>
 
-				<input
-					type='number'
-					name='startDate'
-					placeholder='Start date'
-					onChange={saveSchool}
-				/>
+			<input
+				type='number'
+				name='endDate'
+				placeholder='End date'
+				onChange={saveSchool}
+			/>
 
-				<input
-					type='number'
-					name='endDate'
-					placeholder='End date'
-					onChange={saveSchool}
-				/>
+			<textarea
+				name='description'
+				placeholder='Description'
+				onChange={saveSchool}
+			/>
 
-				<input
-					type='textarea'
-					name='description'
-					placeholder='Description'
-					onChange={saveSchool}
-				/>
-
-				<button onClick={pushSchoolToInfo}>Add</button>
-			</fieldset>
+			<button onClick={pushSchoolToInfo}>Add</button>
 		</div>
 	)
 }

@@ -1,39 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital@1&family=Roboto:ital@1&display=swap');
-
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
 .output {
 	min-height: 100vh;
 	padding: 1rem;
 	display: flex;
 	justify-content: center;
+	background-color: rgb(236, 236, 236);
 }
 
 .resume {
 	width: 800px;
 	background-color: #fff;
-
 	border: 1px solid black;
 }
 
 .personal-information {
 	background-color: #303846;
-	padding: 2rem;
+	padding: 1.6rem;
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 2rem;
-	border-bottom: 1px solid gray;
 }
 
 .left {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	margin-bottom: 1rem;
 }
 
 .left > h1 {
@@ -74,10 +63,6 @@
 	color: rgb(143, 140, 140);
 }
 
-.education {
-	padding: 2rem;
-}
-
 .university {
 	margin-bottom: 1rem;
 }
@@ -110,8 +95,4 @@
 	gap: 0.6rem;
 	justify-content: center;
 	align-items: center;
-}
-
-p {
-	font-family: 'Montserrat', sans-serif;
 }

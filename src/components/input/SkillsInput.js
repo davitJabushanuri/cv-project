@@ -16,18 +16,16 @@ const SkillsInput = ({ info, setInfo }) => {
 	}
 	return (
 		<div className='skills'>
-			<fieldset id='skills-fieldset'>
-				<legend>Skills</legend>
+			<h2>Skills</h2>
 
-				<input
-					type='text'
-					name='skills'
-					placeholder='JavaScript, Python etc.'
-					onChange={saveSkill}
-				/>
+			<input
+				type='text'
+				name='skills'
+				placeholder='JavaScript, Python etc.'
+				onChange={saveSkill}
+			/>
 
-				<button onClick={pushSkillToInfo}>Add</button>
-			</fieldset>
+			<button onClick={pushSkillToInfo}>Add</button>
 		</div>
 	)
 }
