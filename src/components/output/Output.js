@@ -3,6 +3,7 @@ import './Output.css'
 import PersonalDetails from './PersonalDetails'
 import Education from './Education'
 import Employment from './Employment'
+import Skills from './Skills'
 
 const Output = ({ info }) => {
 	return (
@@ -11,6 +12,7 @@ const Output = ({ info }) => {
 				<PersonalDetails personalDetails={info} />
 				<Education education={info.education} />
 				<Employment employment={info.employment} />
+				<Skills skills={info.skills} />
 			</div>
 		</div>
 	)

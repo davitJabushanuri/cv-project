@@ -3,7 +3,7 @@ import React from 'react'
 const Education = ({ education }) => {
 	return (
 		<div className='education'>
-			<h1 className='heading'>Education</h1>
+			<h1 className='heading'>{education.length > 0 ? `Education` : ''}</h1>
 			{education.map(x => {
 				return (
 					<div className='university'>
