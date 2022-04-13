@@ -54,6 +54,7 @@ button {
 	border: none;
 	color: rgb(255, 255, 255);
 	font-weight: 500;
+	cursor: pointer;
 }
 
 textarea {
@@ -81,14 +82,39 @@ h2 {
 }
 
 .resume {
-	overflow: scroll;
-	overflow-x: hidden;
-}
-
-.resume::-webkit-scrollbar {
-	display: none;
+	position: relative;
 }
 
 main {
 	padding: 2rem;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+.profile {
+	padding: 0 1rem;
+	border-right: 1px solid #b0b0b4;
+}
+
+.sidebar {
+	padding: 0 2rem;
+}
+
+.skills {
+	margin-bottom: 2rem;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+
+li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.output .education {
+	margin-bottom: 2rem;
 }

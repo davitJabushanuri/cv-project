@@ -9,7 +9,6 @@
 .resume {
 	width: 800px;
 	background-color: #fff;
-	border: 1px solid black;
 }
 
 .personal-information {
@@ -68,10 +67,9 @@
 }
 
 .heading {
-	font-weight: 500;
-	font-size: 1.6rem;
+	font-weight: 600;
+	font-size: 1.2rem;
 	color: #303846;
-	margin-bottom: 1rem;
 }
 
 .university-info {

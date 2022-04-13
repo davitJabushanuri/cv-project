@@ -8,13 +8,13 @@ import SkillsInput from './SkillsInput'
 const Input = ({ info, setInfo }) => {
 	return (
 		<div className='input'>
-			<form className='form' action=''>
+			<div className='form'>
 				<PersonalDetailsInput info={info} setInfo={setInfo} />
 				<EducationInfo info={info} setInfo={setInfo} />
 				<EmploymentInput info={info} setInfo={setInfo} />
 				<SkillsInput info={info} setInfo={setInfo} />
 				<LanguagesInput info={info} setInfo={setInfo} />
-			</form>
+			</div>
 		</div>
 	)
 }
