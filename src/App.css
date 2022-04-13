@@ -7,7 +7,7 @@
 }
 
 .app {
-	min-height: 100vh;
+	height: 100vh;
 	display: flex;
 }
 
@@ -17,7 +17,6 @@
 
 .Input {
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	overflow: scroll;
 }
@@ -36,7 +35,6 @@ fieldset {
 	align-items: center;
 	border-radius: 10px;
 	padding: 1rem;
-	/* border: none; */
 }
 
 legend {

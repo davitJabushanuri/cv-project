@@ -15,8 +15,8 @@ function App() {
 		linkedin: '',
 		education: [],
 		employment: [],
-		skills: ['javaScript', 'html', 'css', 'react'],
-		languages: ['english', 'georgian'],
+		skills: [],
+		languages: [],
 	})
 	return (
 		<div className='app'>
