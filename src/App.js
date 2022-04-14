@@ -21,7 +21,7 @@ function App() {
 	return (
 		<div className='app'>
 			<Input info={info} setInfo={setInfo} />
-			<Output info={info} />
+			<Output info={info} setInfo={setInfo} />
 		</div>
 	)
 }

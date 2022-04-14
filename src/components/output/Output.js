@@ -6,7 +6,7 @@ import Employment from './Employment'
 import Skills from './Skills'
 import Languages from './Languages'
 
-const Output = ({ info }) => {
+const Output = ({ info, setInfo }) => {
 	return (
 		<div className='output'>
 			<div className='resume'>
@@ -17,7 +17,7 @@ const Output = ({ info }) => {
 						<Employment employment={info.employment} />
 					</div>
 					<div className='sidebar'>
-						<Skills skills={info.skills} />
+						<Skills info={info} setInfo={setInfo} />
 						<Languages languages={info.languages} />
 					</div>
 				</main>
