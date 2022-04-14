@@ -1,4 +1,5 @@
 import React from 'react'
+import { nanoid } from 'nanoid'
 
 const EmploymentInput = ({ info, setInfo }) => {
 	const [job, setJob] = React.useState({})
@@ -7,6 +8,7 @@ const EmploymentInput = ({ info, setInfo }) => {
 		setJob({
 			...job,
 			[e.target.name]: e.target.value,
+			id: nanoid(),
 		})
 	}
 

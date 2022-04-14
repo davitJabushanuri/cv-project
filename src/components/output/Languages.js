@@ -6,7 +6,7 @@ const Languages = ({ languages }) => {
 			<h1 className='heading'>{languages.length > 0 ? `Languages` : ''}</h1>
 			<ul>
 				{languages.map(x => {
-					return <li>{x}</li>
+					return <li key={x.id}>{x.language}</li>
 				})}
 			</ul>
 		</div>

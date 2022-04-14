@@ -1,10 +1,15 @@
 import React from 'react'
+import { nanoid } from 'nanoid'
 
 const SkillsInput = ({ info, setInfo }) => {
-	const [skill, setSkill] = React.useState('')
+	const [skill, setSkill] = React.useState({})
 
 	const saveSkill = e => {
-		setSkill(e.target.value)
+		setSkill({
+			...skill,
+			[e.target.name]: e.target.value,
+			id: nanoid(),
+		})
 	}
 
 	const pushSkillToInfo = e => {

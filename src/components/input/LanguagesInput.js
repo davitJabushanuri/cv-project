@@ -1,10 +1,15 @@
 import React from 'react'
+import { nanoid } from 'nanoid'
 
 const LanguagesInput = ({ info, setInfo }) => {
-	const [language, setLanguage] = React.useState('')
+	const [language, setLanguage] = React.useState({})
 
 	const saveLanguage = e => {
-		setLanguage(e.target.value)
+		setLanguage({
+			...language,
+			[e.target.name]: e.target.value,
+			id: nanoid(),
+		})
 	}
 
 	const pushLanguageToInfo = e => {

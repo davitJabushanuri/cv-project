@@ -6,7 +6,7 @@ const Education = ({ education }) => {
 			<h1 className='heading'>{education.length > 0 ? `Education` : ''}</h1>
 			{education.map(x => {
 				return (
-					<div className='university'>
+					<div key={x.id} className='university'>
 						<div className='university-info'>
 							<div className='university-name'>
 								<p className='specialty'>{x.specialty}</p>

@@ -6,7 +6,7 @@ const Skills = ({ skills }) => {
 			<h1 className='heading'>{skills.length > 0 ? `Skills` : ''}</h1>
 			<ul>
 				{skills.map(x => {
-					return <li>{x}</li>
+					return <li key={x.id}>{x.skills}</li>
 				})}
 			</ul>
 		</div>
