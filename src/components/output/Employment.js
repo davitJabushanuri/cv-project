@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 const Employment = ({ info, setInfo }) => {
 	const { employment } = info
@@ -15,7 +17,7 @@ const Employment = ({ info, setInfo }) => {
 			<h1 className='heading'>{employment.length > 0 ? `Employment` : ''}</h1>
 			{employment.map(x => {
 				return (
-					<div key={x.id} className='job university'>
+					<div key={x.id} className='job university relative'>
 						<div className='job-info university-info'>
 							<div className='job-name university-name'>
 								<p className='specialty'>{x.position}</p>
@@ -29,7 +31,7 @@ const Employment = ({ info, setInfo }) => {
 						</div>
 						<p>{x.description}</p>
 						<button className='deleteButton' onClick={() => handleDelete(x.id)}>
-							delete
+							<FontAwesomeIcon className='deleteIcon' icon={faTrash} />
 						</button>
 					</div>
 				)

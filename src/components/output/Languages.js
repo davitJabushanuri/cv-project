@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 const Languages = ({ info, setInfo }) => {
 	const { languages } = info
@@ -16,13 +18,13 @@ const Languages = ({ info, setInfo }) => {
 			<ul>
 				{languages.map(x => {
 					return (
-						<li key={x.id}>
+						<li key={x.id} className='relative'>
 							{x.language}{' '}
 							<button
 								className='deleteButton'
 								onClick={() => handleDelete(x.id)}
 							>
-								delete
+								<FontAwesomeIcon className='deleteIcon' icon={faTrash} />
 							</button>
 						</li>
 					)
