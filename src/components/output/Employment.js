@@ -2,6 +2,14 @@ import React from 'react'
 
 const Employment = ({ info, setInfo }) => {
 	const { employment } = info
+
+	const handleDelete = id => {
+		const filteredEmployment = employment.filter(x => x.id !== id)
+		setInfo({
+			...info,
+			employment: filteredEmployment,
+		})
+	}
 	return (
 		<div className='employment education'>
 			<h1 className='heading'>{employment.length > 0 ? `Employment` : ''}</h1>
@@ -20,6 +28,9 @@ const Employment = ({ info, setInfo }) => {
 							</div>
 						</div>
 						<p>{x.description}</p>
+						<button className='deleteButton' onClick={() => handleDelete(x.id)}>
+							delete
+						</button>
 					</div>
 				)
 			})}

@@ -2,6 +2,14 @@ import React from 'react'
 
 const Education = ({ info, setInfo }) => {
 	const { education } = info
+
+	const handleDelete = id => {
+		const filteredEducation = education.filter(x => x.id !== id)
+		setInfo({
+			...info,
+			education: filteredEducation,
+		})
+	}
 	return (
 		<div className='education'>
 			<h1 className='heading'>{education.length > 0 ? `Education` : ''}</h1>
@@ -20,6 +28,9 @@ const Education = ({ info, setInfo }) => {
 							</div>
 						</div>
 						<p>{x.description}</p>
+						<button className='deleteButton' onClick={() => handleDelete(x.id)}>
+							delete
+						</button>
 					</div>
 				)
 			})}
