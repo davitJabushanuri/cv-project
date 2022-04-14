@@ -18,13 +18,18 @@ const EducationInfo = ({ info, setInfo }) => {
 			...info,
 			education: [...info.education, school],
 		})
-		console.log(info)
+
+		const el = document.querySelectorAll('.education-input')
+		el.forEach(x => {
+			x.value = ''
+		})
 	}
 
 	return (
 		<div className='education'>
 			<h2>Education</h2>
 			<input
+				className='education-input'
 				type='text'
 				name='specialty'
 				placeholder='Specialty'
@@ -32,6 +37,7 @@ const EducationInfo = ({ info, setInfo }) => {
 			/>
 
 			<input
+				className='education-input'
 				type='text'
 				name='university'
 				placeholder='University'
@@ -39,6 +45,7 @@ const EducationInfo = ({ info, setInfo }) => {
 			/>
 
 			<input
+				className='education-input'
 				type='number'
 				name='startDate'
 				placeholder='Start date'
@@ -46,6 +53,7 @@ const EducationInfo = ({ info, setInfo }) => {
 			/>
 
 			<input
+				className='education-input'
 				type='number'
 				name='endDate'
 				placeholder='End date'
@@ -53,6 +61,7 @@ const EducationInfo = ({ info, setInfo }) => {
 			/>
 
 			<textarea
+				className='education-input'
 				name='description'
 				placeholder='Description'
 				onChange={saveSchool}

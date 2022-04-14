@@ -18,12 +18,14 @@ const LanguagesInput = ({ info, setInfo }) => {
 			...info,
 			languages: [...info.languages, language],
 		})
+		document.getElementById('language-input').value = ''
 	}
 
 	return (
-		<div className='languages'>
+		<form className='languages'>
 			<h2>Languages</h2>
 			<input
+				id='language-input'
 				type='text'
 				name='language'
 				placeholder='english, russian etc.'
@@ -31,7 +33,7 @@ const LanguagesInput = ({ info, setInfo }) => {
 			/>
 
 			<button onClick={pushLanguageToInfo}>Add</button>
-		</div>
+		</form>
 	)
 }
 

@@ -18,12 +18,18 @@ const EmploymentInput = ({ info, setInfo }) => {
 			...info,
 			employment: [...info.employment, job],
 		})
+
+		const el = document.querySelectorAll('.employment-input')
+		el.forEach(x => {
+			x.value = ''
+		})
 	}
 
 	return (
 		<div className='employment'>
 			<h2>Employment</h2>
 			<input
+				className='employment-input'
 				type='text'
 				name='position'
 				placeholder='Position'
@@ -31,6 +37,7 @@ const EmploymentInput = ({ info, setInfo }) => {
 			/>
 
 			<input
+				className='employment-input'
 				type='text'
 				name='employer'
 				placeholder='Employer'
@@ -38,6 +45,7 @@ const EmploymentInput = ({ info, setInfo }) => {
 			/>
 
 			<input
+				className='employment-input'
 				type='number'
 				name='startDate'
 				placeholder='Start date'
@@ -45,6 +53,7 @@ const EmploymentInput = ({ info, setInfo }) => {
 			/>
 
 			<input
+				className='employment-input'
 				type='number'
 				name='endDate'
 				placeholder='End date'
@@ -52,6 +61,7 @@ const EmploymentInput = ({ info, setInfo }) => {
 			/>
 
 			<textarea
+				className='employment-input'
 				name='description'
 				placeholder='Description'
 				onChange={saveJob}
