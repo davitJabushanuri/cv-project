@@ -26,7 +26,7 @@ const EmploymentInput = ({ info, setInfo }) => {
 	}
 
 	return (
-		<div className='employment'>
+		<form className='employment form'>
 			<h2>Employment</h2>
 			<input
 				className='employment-input'
@@ -68,7 +68,7 @@ const EmploymentInput = ({ info, setInfo }) => {
 			/>
 
 			<button onClick={pushJobToInfo}>Add</button>
-		</div>
+		</form>
 	)
 }
 

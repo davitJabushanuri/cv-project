@@ -22,7 +22,7 @@ const LanguagesInput = ({ info, setInfo }) => {
 	}
 
 	return (
-		<form className='languages'>
+		<form className='languages form'>
 			<h2>Languages</h2>
 			<input
 				id='language-input'

@@ -8,7 +8,7 @@ const PersonalDetailsInput = ({ info, setInfo }) => {
 		})
 	}
 	return (
-		<div className='personal-details'>
+		<div className='personal-details form'>
 			<h2>Personal Details</h2>
 
 			<input

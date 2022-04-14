@@ -21,7 +21,7 @@ const SkillsInput = ({ info, setInfo }) => {
 		document.getElementById('skills-input').value = ''
 	}
 	return (
-		<form className='skills'>
+		<form className='skills form'>
 			<h2>Skills</h2>
 
 			<input

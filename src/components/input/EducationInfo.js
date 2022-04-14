@@ -26,7 +26,7 @@ const EducationInfo = ({ info, setInfo }) => {
 	}
 
 	return (
-		<div className='education'>
+		<form className='education form'>
 			<h2>Education</h2>
 			<input
 				className='education-input'
@@ -68,7 +68,7 @@ const EducationInfo = ({ info, setInfo }) => {
 			/>
 
 			<button onClick={pushSchoolToInfo}>Add</button>
-		</div>
+		</form>
 	)
 }
 
