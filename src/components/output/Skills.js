@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Skills = ({ info, setInfo }) => {
+	const { skills } = info
 	const handleDelete = id => {
-		const filteredSkills = info.skills.filter(x => x.id !== id)
-		console.log(filteredSkills)
+		const filteredSkills = skills.filter(x => x.id !== id)
 		setInfo({
 			...info,
 			skills: filteredSkills,
@@ -11,13 +11,18 @@ const Skills = ({ info, setInfo }) => {
 	}
 	return (
 		<div className='skills'>
-			<h1 className='heading'>{info.skills.length > 0 ? `Skills` : ''}</h1>
+			<h1 className='heading'>{skills.length > 0 ? `Skills` : ''}</h1>
 			<ul>
-				{info.skills.map(x => {
+				{skills.map(x => {
 					return (
 						<li key={x.id}>
 							{x.skills}{' '}
-							<button onClick={() => handleDelete(x.id)}>delete</button>
+							<button
+								className='deleteButton'
+								onClick={() => handleDelete(x.id)}
+							>
+								delete
+							</button>
 						</li>
 					)
 				})}

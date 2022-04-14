@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Education = ({ education }) => {
+const Education = ({ info, setInfo }) => {
+	const { education } = info
 	return (
 		<div className='education'>
 			<h1 className='heading'>{education.length > 0 ? `Education` : ''}</h1>

@@ -13,12 +13,12 @@ const Output = ({ info, setInfo }) => {
 				<PersonalDetails personalDetails={info} />
 				<main>
 					<div className='profile'>
-						<Education education={info.education} />
-						<Employment employment={info.employment} />
+						<Education info={info} setInfo={setInfo} />
+						<Employment info={info} setInfo={setInfo} />
 					</div>
 					<div className='sidebar'>
 						<Skills info={info} setInfo={setInfo} />
-						<Languages languages={info.languages} />
+						<Languages info={info} setInfo={setInfo} />
 					</div>
 				</main>
 			</div>
