@@ -90,30 +90,6 @@ After you've made sure to have all the tools installed, you should be able to ju
 CV builder app with react hooks - you can enter personal details, education, employment, skills, languages.
 
 
-<!-- CONTRIBUTING -->
-## Contributing
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue.
-
-1. Fork the Project
-2. Create your Feature Branch
-3. Commit your Changes
-4. Push to the Branch
-5. Open a Pull Request
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<!-- CONTACT -->
-## Contact
-
-Davit Jabushanuri - [@Davit96526599](https://twitter.com/Davit96526599) - davitjabushanuri95@gmail.com
-
-Project Link: [https://github.com/davitJabushanuri/weather-app](https://github.com/davitJabushanuri/weather-app)
-
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
